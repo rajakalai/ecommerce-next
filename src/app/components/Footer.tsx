@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-const Header: React.FC = () => {
+const Footer: React.FC = () => {
     console.log('data', Array.from(Array(5)))
     return (
-        <div className="grid grid-cols-12 gap-4 h-20 px-4 items-center">
+        <div className="grid grid-cols-12 gap-4 bg-slate-900 text-white h-20 px-4">
            <div className="col-span-2">
                 <Image src='./next.svg' alt='' width={100} height={100}/>
            </div>
@@ -22,4 +22,4 @@ const Header: React.FC = () => {
     )
 }
 
-export default Header
+export default Footer

@@ -1,25 +1,15 @@
-import React from "react";
-import Image from "next/image";
-const Header: React.FC = () => {
-    console.log('data', Array.from(Array(5)))
-    return (
-        <div className="grid grid-cols-12 gap-4 h-20 px-4 items-center">
-           <div className="col-span-2">
-                <Image src='./next.svg' alt='' width={100} height={100}/>
-           </div>
-           <div className="col-span-6">
-                <input type="text" placeholder="search" className="border border-red-300 w-100 h-10 ring-pink-500"/>
-            </div>
-            <div className="col-span-4">
-                <ul className="flex gap-4 flex-row-reverse">
-                    <li>orders</li>
-                    <li>track orders</li>
-                    <li>signin</li>
-                </ul>
+import Navbar from './Navbar';
+import UserMenu from './UserMenu';
 
-            </div>
-        </div>
-    )
-}
+const Header = () => {
+  return (
+    <header>
+      <div className="nav-area" style={{display: 'flex', justifyContent : 'space-between'}}>
+        <Navbar />
+        <UserMenu />
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
